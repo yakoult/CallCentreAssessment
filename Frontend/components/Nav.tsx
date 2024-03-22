@@ -5,6 +5,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+
+import Logo from "../public/images/logo_2.svg";
 
 const Links = [
   { name: "Home", href: "/" },
@@ -24,6 +27,13 @@ const Nav = () => {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
+                <Image
+                  alt="Finity Logo"
+                  src={Logo}
+                  height={48}
+                  width={48}
+                  className="mr-6"
+                />
                 <div className="hidden sm:block">
                   <div className="flex space-x-4">
                     {Links.map((link) => (

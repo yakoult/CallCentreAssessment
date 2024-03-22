@@ -19,9 +19,7 @@ dotnet run --project ./Assessment.Api
 
 ### Stack
 
-- .NET 7.0
-- EF 7.0
-- Serilog, with Seq integration
-- OpenTelemetry, with Jaeger integration
-- Swagger
+- .NET and EF 7.0
 - MediatR
+- Serilog, OpenTelemetry, with Jaeger integration
+- Swagger

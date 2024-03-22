@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Table } from "../../components/Table";
 import Link from "../../components/Link";
 import Pagination from "../../components/Pagination";
+import { Card } from "@/components/Card";
 
 interface User {
   id: string;
@@ -35,6 +36,12 @@ const UsersTable = () => {
 
   return (
     <div>
+      <div className="flex mb-4">
+        <Card>
+          <Card.Title>{data?.totalResultsCount}</Card.Title>
+          <Card.Body>Total number of Users</Card.Body>
+        </Card>
+      </div>
       <div className="sm:flex sm:items-center">
         <div className="sm:flex-auto">
           <h1 className="text-base font-semibold leading-6 text-white">

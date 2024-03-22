@@ -30,9 +30,10 @@ const HomePage = async () => {
             The app currently supports viewing and creating Users and Calls.
             Throughout the challenge, it&apos;s important to take in the
             conventions and patterns used in the existing codebase and try to
-            adopt them as you make changes. We aim to work as a unified team,
-            and this is reflected in our code. We want to see your ability to
-            work within this environment.
+            adopt them as you make changes; your frontend solution should aim to
+            use existing components, for example. We aim to work as a unified
+            team, and this is reflected in our code. We want to see your ability
+            to work within this environment.
           </p>
           <p>
             If you believe there is a good case for a new piece of tech or a
@@ -40,22 +41,21 @@ const HomePage = async () => {
             it!
           </p>
           <h2 className="text-xl pt-5">Your Task</h2>
-          <p>Our Stats page, seen in the navigation above, is very empty.</p>
+          <p>
+            Our Stats page, seen in the navigation above, is very empty. Your
+            task is to add some stats, detailed below.
+          </p>
           <p>
             The imaginary users of this site would love to be able to see
             insights into their usage.
           </p>
           <ul className="list-disc list-inside ml-1 mb-5">
             <li>
-              Add a fully functional feature to enable users to see stats about
-              their calls.
-            </li>
-            <li>
               The stats page should only include calls for the current day.
             </li>
             <li>
-              Show the number of calls made each hour of the working day, from
-              9AM to 5PM.
+              Show the number of calls made each hour of the working day, from 9
+              AM to 5 PM.
             </li>
             <li>
               Rank the hours based on the number of calls. In the case of a tie,
@@ -65,7 +65,45 @@ const HomePage = async () => {
               For each hour of the day, show the user who placed the highest
               number of calls.
             </li>
+            <li>
+              Display this information in a table. Ensure the table is
+              consistent with the current design.
+            </li>
           </ul>
+
+          <p>Secondly, display some additional summary stats, including:</p>
+          <ul className="list-disc list-inside ml-1 mb-5">
+            <li>The date on which the most calls occurred.</li>
+            <li>The average number of calls per day.</li>
+            <li>The average number of calls per user.</li>
+          </ul>
+          <p>
+            These stats should appear above the table on the stats page. Try to
+            align the stats to the current design. Existing components are your
+            friend!
+          </p>
+
+          <h2 className="text-xl pt-5">Desired Table Output</h2>
+          <table>
+            <thead className="border border-gray-600 font-bold">
+              <tr>
+                <td className="p-3">Hour</td>
+                <td>Call Count</td>
+                <td>Top Use</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border border-gray-600">
+                <td className="p-3">..</td>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+          <p className="italic">
+            Note: This table is an example of the data only, not styling or
+            code.
+          </p>
         </div>
       </div>
     </main>

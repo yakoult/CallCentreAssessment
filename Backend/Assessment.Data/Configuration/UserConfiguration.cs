@@ -15,6 +15,16 @@ public class UserConfiguration : BaseConfiguration<User>
         builder
             .HasMany<Call>(x => x.Calls)
             .WithOne(x => x.CallingUser);
+
+        builder
+            .HasData(new List<User>
+            {
+                new()
+                {
+                    Id = Guid.Parse("43baf7ac-2ba3-46f8-acf4-10b0795f34d1"),
+                    Username = "Fin Coder",
+                },
+            });
         
         base.Configure(builder);
     }

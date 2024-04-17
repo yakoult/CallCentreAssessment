@@ -1,4 +1,4 @@
-# Technical Challenge
+# The Finity Technical Challenge
 
 ## Getting Started
 

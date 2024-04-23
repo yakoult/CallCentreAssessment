@@ -89,7 +89,7 @@ const HomePage = async () => {
               <tr>
                 <td className="p-3">Hour</td>
                 <td>Call Count</td>
-                <td>Top Use</td>
+                <td>Top User</td>
               </tr>
             </thead>
             <tbody>

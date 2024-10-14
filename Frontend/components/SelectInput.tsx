@@ -16,7 +16,7 @@ export interface SelectOption {
 const SelectInput = ({ label, id, options, isLoading, ...props }: Props) => {
   useEffect(() => {
     // The input defaults to the initial value of the first option; Emit that change.
-    if (isLoading === false) {
+    if (isLoading === false && props.value === "") {
       props.onChange?.({ target: { value: options?.[0].id } } as any);
     }
   }, [props, options, isLoading]);

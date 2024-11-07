@@ -21,4 +21,14 @@ public class CallController : BaseApiController
     public async Task<Result<CreateCallResult>> CreateCallAsync(
         [FromBody] CreateCallCommand command) =>
         await _mediator.Send(command);
+
+    [HttpGet("dailystats")]
+    public async Task<PaginatedResult<GetCallsPerHourResultRow>> GetCallsPerHour(
+        [FromQuery] GetCallsPerHourQuery query) =>
+        await _mediator.Send(query);
+
+    [HttpGet("summarystats")]
+    public async Task<Result<SummaryStats>> GetSummaryStats(
+        [FromQuery] GetSummaryStatsQuery query) =>
+        await _mediator.Send(query);
 }
